@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Taskmania</title>
+    <meta name="description" content="Your best app about developing your time">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <!-- scroll reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css"
+        integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
+    <!-- animate css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Raleway:wght@200;300;400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="app">
+        <section class="hero">
+            <div class="bg-img-1"></div>
+            <div class="bg-img-2"></div>
+            <section class="container animate__animated animate__fadeOutUp animate__delay-2s">
+                <h1 class="hero__logo animate__animated animate__fadeIn">
+                    TASKMANIA
+                </h1>
+            </section>
+        </section>
+        <section class="home">
+            <header class="home__header">
+                <div class="header-bg-images">
+                    <img class="hexagon" src="img/hexagon.png" alt="header image hexagon">
+                    <img class="t-sign" src="img/T-sign.png" alt="header background image">
+                </div>
+                <h1 class="header-logo animate__animated animate__fadeIn">
+                    TASKMANIA
+                </h1>
+            </header>
+            <div class="content-slider">
+                <section class="home-slide slide fixed" id="home-slide">
+                    <div class="page-title fixed-page-title">
+                        <h1 class="title">Upcoming tasks</h1>
+                    </div>
+                    <main class="content home-content">
+                        <section class="container">
+                            <div class="tasks-container">
+                                <div class="empty-tasks-cnt">
+                                    <h2 class="empty-task-cnt-info">Add your tasks...</h2>
+                                </div>
+                                <!-- here goes tasks -->
+                            </div>
+                        </section>
+                    </main>
+                </section>
+                <section class="lists-slide slide" id="lists-slide">
+                    <div class="page-title">
+                        <h1 class="title">create your category</h1>
+                    </div>
+                    <main class="content lists-content">
+                        <section class="container content-cnt">
+                            <section class="create-category-cnt">
+                                <label for="add-category">Create new category:</label>
+                                <form class="add-category-cnt">
+                                    <input class="add-category" name="add-category" type="text" placeholder="Enter your new category name here">
+                                    <button class="add-category-btn" type="submit"><i class="fas fa-plus fa-plus-category"></i></button>
+                                </form>
+                            </section>
+                            <section class="edit-categories-cnt">
+                                <h2 class="task-group-title">your categories:</h2>
+                                <div class="categories">
+                                    <div class="new-category">
+                                        <h2 class="new-category-name">all</h2>
+                                        <i class="fas fa-minus-circle"></i>
+                                    </div>
+                                </div>
+                            </section>
+                        </section>
+                    </main>
+                </section>
+                <section class="history-slide slide" id="history-slide">
+                    <div class="page-title">
+                        <h1 class="title">History</h1>
+                    </div>
+                    <main class="content history-content">
+                        <section class="container">
+                            <section class="create-category-cnt">
+                                <label for="add-category">Select category: </label>
+                                <select name="list" class="select-category" id="history-select-category">
+                                </select>
+                            </section>
+                            <section class="edit-lists-cnt">
+                                <h2 class="task-group-title">Your previous tasks:</h2>
+                                <div class="previous-tasks">
+                                    <!-- here goes previous tasks -->
+                                </div>
+                            </section>
+                        </section>
+                    </main>
+                </section>
+            </div>
+            <nav class="nav">
+                <button class="add-task-btn"><i class="fas fa-plus"></i></button>
+                <ul class="menu">
+                    <li class="menu__item active">
+                        <a href="#home-slide" class="menu__link">
+                            <i class="fas fa-home"></i>
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#lists-slide" class="menu__link">
+                            <i class="fas fa-list-ul"></i>
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#history-slide" class="menu__link">
+                            <i class="fas fa-history"></i>
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">
+                            <i class="fas fa-user"></i>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+        <section class="user">
+            <section class="container">
+                <header class="user-header">
+                    <i class="fas fa-times user-header__times"></i>
+                </header>
+                <div class="user-content">
+                    <i class="fas fa-user user-icon"></i>
+                    <div class="user-info">
+                        <h4 class="user__username">Jan Kowalski</h4>
+                        <h5 class="user__email">kentucky@gmail.com</h5>
+                    </div>
+                </div>
+                <section class="more">
+                    <div class="more__contact">
+                        <h4 class="more-style"><a href="#">contact</a></h4>
+                    </div>
+                    <div class="more__regulations">
+                        <h4 class="more-style"><a href="#">regulations</a></h4>
+                    </div>
+                    <div class="more__protection">
+                        <h4 class="more-style"><a href="#">protection</a></h4>
+                    </div>
+                    <div class="more__help">
+                        <h4 class="more-style"><a href="#">help</a></h4>
+                    </div>
+                </section>
+                <section class="user-tasks">
+                    <div class="user-tasks-group">
+                        <!-- here goes user tasks -->
+                    </div>
+                </section>
+            </section>
+        </section>
+        <section class="add-task">
+            <div class="add-task-cnt">
+                <header class="add-task-header">
+                    <i class="fas fa-times add-task-times"></i>
+                    <h3 class="add-task-headline">Add new task</h3>
+                </header>
+                <form id="addTaskForm" action="">
+                    <label for="newTask">Your new task:</label>
+                    <input name="newTask" class="newTask" type="text" placeholder="Name your new task" required>
+                    <label for="setDate">Set date:</label>
+                    <input type="date" class="newTaskDate" required>
+                    <label for="setTime">Set time:</label>
+                    <input  name="setTime" type="time" class="newTaskTime" required>
+                    <label for="setCategory">Set category:</label>
+                    <select name="setCategory" class="select-category addTaskSelect" id="category" required>
+                    </select>
+                    <button class="add-task-submit-btn" type="submit">Add task</button>
+                </form>
+            </div>
+        </section>
+        <div class="overlay">
+        </div>
+        <div class="alert-cnt">
+            <div class="alert"></div>
+        </div>
+    </section>
+    <script src="app.js" defer></script>
+</body>
+
+</html>
